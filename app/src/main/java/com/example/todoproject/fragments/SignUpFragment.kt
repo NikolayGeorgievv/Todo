@@ -50,6 +50,8 @@ class SignUpFragment : Fragment() {
 
             if (email.isNotEmpty() && pass.isNotEmpty() && confirmPass.isNotEmpty()){
                 if (pass == confirmPass){
+                    binding.progressBar.visibility = View.VISIBLE
+
                     auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
 
                         if (it.isSuccessful) {
@@ -60,8 +62,16 @@ class SignUpFragment : Fragment() {
                             Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT)
                                 .show()
                         }
+                        binding.progressBar.visibility = View.GONE
+
                     }
+                }else{
+                    Toast.makeText(context, "Passwords doesn't match", Toast.LENGTH_SHORT)
+                        .show()
                 }
+            }else{
+                Toast.makeText(context, "Empty fields not allowed", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
     }

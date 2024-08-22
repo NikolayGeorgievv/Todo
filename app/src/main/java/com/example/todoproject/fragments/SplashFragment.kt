@@ -28,6 +28,10 @@ class SplashFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         auth = FirebaseAuth.getInstance()
         navController = Navigation.findNavController(view)
+
+//        signing out the user(testing purposes)
+//        auth.signOut()
+
         Handler(Looper.myLooper()!!).postDelayed(Runnable {
         if (auth.currentUser != null){
             navController.navigate(R.id.action_splashFragment_to_homeFragment)

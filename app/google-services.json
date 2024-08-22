@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "909871963235",
+    "firebase_url": "https://todoproject-d1fb1-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "todoproject-d1fb1",
     "storage_bucket": "todoproject-d1fb1.appspot.com"
   },
@@ -12,7 +13,12 @@
           "package_name": "com.example.todoproject"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "909871963235-ovacuqdppffbgt8ekn859pi4k6eal21h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBZKYFNVqO_j1EeGL7DoOntsI9YsdzT4og"
@@ -20,7 +26,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909871963235-ovacuqdppffbgt8ekn859pi4k6eal21h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
