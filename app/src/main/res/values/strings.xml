@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">ToDoProject</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mainbg">mainBG</string>
     <string name="enter_email">Enter email</string>
-    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_msg">Not registered? Sign Up</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="sign_in">Sign in\n</string>
+    <string name="sign_in_msg">Already registered? Sign in\n</string>
     <string name="enter_todo">Enter todo</string>
+    <string name="welcomeText">Welcome to ToDo organizer!</string>
+    <string name="sign_up">Sign up!</string>
+    <string name="sign_in">Sign in</string>
 </resources>

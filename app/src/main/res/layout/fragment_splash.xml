@@ -8,15 +8,32 @@
 
 
     <ImageView
-        android:layout_width="414dp"
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
         android:contentDescription="@string/mainbg"
+        android:scaleType="fitXY"
         android:src="@drawable/basic_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="352dp"
+        android:layout_height="126dp"
+        android:text="@string/welcomeText"
+        android:textColor="@color/basicFontColor"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.499" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

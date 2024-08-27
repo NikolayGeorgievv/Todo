@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="414dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/mainbg"
         android:scaleType="fitXY"
@@ -121,37 +121,24 @@
 
     <TextView
         android:id="@+id/authTextView"
-        android:layout_width="80dp"
+        android:layout_width="wrap_content"
         android:layout_height="34dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/sign_in"
-        android:textColor="@color/black"
+        android:text="@string/sign_in_msg"
+        android:textColor="@color/basicFontColor"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/card3"
         app:layout_constraintTop_toBottomOf="@+id/card3" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="98dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/sign_up"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
-
     <ImageView
         android:id="@+id/nextBtn"
-        android:layout_width="124dp"
-        android:layout_height="193dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:src="@drawable/arrow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card3"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authTextView"
         app:layout_constraintVertical_bias="0.6" />
 
     <ProgressBar
@@ -161,7 +148,23 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card3" />
+        app:layout_constraintTop_toBottomOf="@+id/card2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/basicFontColor"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:fontFamily="cursive"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
